@@ -1,6 +1,8 @@
 name: Create PR via GitHub API
 
 on:
+  merge_group:
+  pull_request:
   push:
     branches:
       - feature/*
