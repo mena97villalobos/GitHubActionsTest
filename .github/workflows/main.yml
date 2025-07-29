@@ -41,7 +41,7 @@ jobs:
 
       - name: Create pull request using GitHub API
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
           REPO: ${{ github.repository }}
           BASE_BRANCH: main                      # branch to merge into
           PR_TITLE: "Automated PR from GitHub Action"
